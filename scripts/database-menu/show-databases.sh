@@ -17,7 +17,7 @@ clear
 echo "Here all the databases on your server "
 echo "___________"
 echo "${blu}"
-mariadb <<MYSQL_SCRIPT
+mysql -uroot <<MYSQL_SCRIPT
 show databases;
 MYSQL_SCRIPT
 echo "${end}___________"
