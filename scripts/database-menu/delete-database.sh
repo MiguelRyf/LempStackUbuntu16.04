@@ -47,7 +47,7 @@ echo ""
 echo "YOUR DATABASES"
 echo "___________"
 echo "${grn}"
-mariadb <<MYSQL_SCRIPT
+mysql -uroot <<MYSQL_SCRIPT
 SHOW DATABASES;
 MYSQL_SCRIPT
 echo "${end}___________"
@@ -74,7 +74,7 @@ clear
 echo "YOUR DATABASE USER"
 echo "___________"
 echo "${grn}"
-mariadb <<MYSQL_SCRIPT
+mysql -uroot <<MYSQL_SCRIPT
 SELECT User FROM mysql.user;
 MYSQL_SCRIPT
 echo "${end}___________"
@@ -82,7 +82,7 @@ echo ""
 echo -n "Type your user database name you want to delete [eg, user_domain]: "
 read usr
 
-mariadb <<MYSQL_SCRIPT
+mysql -uroot <<MYSQL_SCRIPT
 DROP DATABASE $userdb1;
 DROP USER '$usr'@'localhost';
 MYSQL_SCRIPT
