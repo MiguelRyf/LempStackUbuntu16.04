@@ -229,7 +229,7 @@ sleep 1
     service php7.0-fpm reload >/dev/null 2>&1
 
         # Restart nginx and php-fpm
-    echo "R${grn}estart Nginx & PHP-FPM ...${end}"
+    echo "${grn}Restart Nginx & PHP-FPM ...${end}"
     echo ""
     sleep 1
     systemctl restart nginx >/dev/null 2>&1
@@ -242,7 +242,7 @@ sleep 1
     chmod +x menu.sh
 
     # Success Prompt
-    #clear
+    clear
     echo "LEMP Auto Installer BY Miguel Emmara `date`"
     echo "*******************************************************************************************"
     echo ""
