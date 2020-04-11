@@ -27,7 +27,7 @@ Here all the list that the script will install
 
 ## Prerequisites
 What things you need to make sure before proceed.
-* **ONLY FOR UBUNTU 16.04**
+* **ONLY FOR UBUNTU 16.04 (Both x32 & x64)**
 * **YOU SHOULD BE LOGIN AS ROOT**
 
 ## How to use
