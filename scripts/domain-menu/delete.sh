@@ -86,7 +86,7 @@ clear
 # Delete Database
 domainClear=${domain//./}
 domainClear2=${domainClear//-/}
-mariadb <<MYSQL_SCRIPT
+mysql -uroot <<MYSQL_SCRIPT
 DROP DATABASE database_$domainClear2;
 DROP USER 'user_$domainClear2'@'localhost';
 MYSQL_SCRIPT
